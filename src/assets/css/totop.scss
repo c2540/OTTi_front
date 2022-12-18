@@ -1,0 +1,30 @@
+.back-to-top-btn {
+    position:sticky;
+    cursor: pointer;
+    z-index: 9;
+    left: 100%;
+    transform: translate(120px, 0px);
+    color: royalblue;
+    background-color: azure;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    transition: .6s;
+    overflow: hidden;
+    text-align: center;
+    
+        &.go-top {
+            opacity: 1;
+            visibility: visible;
+            bottom: 50px;
+        }
+        &:hover {
+            background-color: royalblue;
+            color: azure;
+            transition: .6s;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            transform: translate(120px, 0px) translateY(-5px);
+        }
+}

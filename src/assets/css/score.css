@@ -1,0 +1,67 @@
+#score fieldset{
+    display: inline-block; 
+    direction: rtl;
+    border: 0; 
+}
+#score fieldset legend{
+    text-align: left;
+}
+#score input[type=radio]{
+    display: none; 
+}
+#score label{
+    font-size: 2em; 
+    color: transparent; 
+    text-shadow: 0 0 0 #f0f0f0; 
+}
+#score label:hover{
+    text-shadow: 0 0 0 orange;
+}
+
+#score label:hover ~ label{
+    text-shadow: 0 0 0 orange; 
+}
+#score input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 orange;
+}
+/* 불러온 점수 */
+#score1 fieldset{
+    display: inline-block; 
+    direction: rtl;
+    border: 0; 
+}
+#score1 fieldset legend{
+    text-align: left;
+}
+#score1 input[type=radio]{
+    display: none; 
+}
+#score1 label{
+    font-size: 2em; 
+    color: transparent; 
+    text-shadow: 0 0 0 #f0f0f0; 
+}
+
+#score1 input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 orange;
+}
+#rate fieldset{
+    display: inline-block; 
+    direction: rtl;
+    border: 0; 
+}
+#rate fieldset legend{
+    text-align: left;
+}
+#rate input[type=radio]{
+    display: none; 
+}
+#rate label{
+    font-size: 13px; 
+    color: transparent; 
+    text-shadow: 0 0 0 #f0f0f0; 
+}
+
+#rate input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 orange;
+}

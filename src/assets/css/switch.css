@@ -1,0 +1,59 @@
+.wrapper {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 50px auto;
+  }
+  #switch {
+    position: absolute;
+    /* hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .switch_label {
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 1000px;
+    width: 100%;
+    height: 100%;
+    background: royalblue;
+    border: 2px solid royalblue;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .onf_btn {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 0.5%;
+    display: inline-block;
+    width: 50%;
+    height: 80%;
+    border-radius: 20px;
+    background: azure;
+    transition: 0.5s;
+  }
+  
+  /* checking style */
+  #switch:checked+.switch_label {
+    background:royalblue;
+    border: 2px solid royalblue;
+  }
+  
+  #switch:checked+.switch_label:hover {
+    background: royalblue;
+  }
+  
+  /* move */
+  #switch:checked+.switch_label .onf_btn {
+    left: 49.5%;
+  }
+
+  .btn_txt{
+    color: royalblue;
+    font-weight:bold;
+    margin-top: 1%
+  }
